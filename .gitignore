@@ -8,3 +8,4 @@ local.settings.json
 test
 HttpTrigger2
 .funcignore
+proxies.json
