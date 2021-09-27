@@ -6,7 +6,7 @@
           "methods": [ "GET" ,"POST"],
           "route": "/{Action}"
       },
-      "backendUri": "https://ssvm4a.azurewebsites.net/api/HttpTrigger",
+      "backendUri": "https://{関数アプリ名}.azurewebsites.net/api/{function名}",
       "requestOverrides": {
         "backend.request.method":"POST",
         "backend.request.querystring.Action": "{Action}"
