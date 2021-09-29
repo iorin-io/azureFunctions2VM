@@ -13,3 +13,7 @@ https://dev.to/pwd9000/power-virtual-machines-on-or-off-using-azure-functions-4k
 公式Doc: Azure Functions プロキシの操作
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-proxies#requestOverrides
+
+Functions で仮想マシンの起動停止を行うには：Cloud Steady
+
+https://cloudsteady.jp/post/20796/
