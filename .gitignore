@@ -4,7 +4,7 @@ bin
 obj
 appsettings.json
 local.settings.json
-.vscode
+
 test
 HttpTrigger2
 .funcignore
