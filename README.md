@@ -17,3 +17,12 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-proxies#request
 Functions で仮想マシンの起動停止を行うには：Cloud Steady
 
 https://cloudsteady.jp/post/20796/
+
+#### iorin_ioメモ
+
+Functionsのバージョンが4.xだと、プロキシが機能してくれない
+
+Functions v4.x でプロキシを再度有効にするには、環境変数に`AzureWebJobsFeatureFlags`を追加し、値を`EnableProxies`に設定する。
+以上を行った上で、proxies.jsonを正しく記述してあげることで、プロキシ機能を使用することができる。
+
+https://learn.microsoft.com/ja-jp/azure/azure-functions/legacy-proxies#re-enable-proxies-in-functions-v4x

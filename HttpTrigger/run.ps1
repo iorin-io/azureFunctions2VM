@@ -15,7 +15,11 @@ Try{
 
     $ResourceGroupName = $env:RG4
     $VMName = $env:VM4
+    $Context = $env:Context
     $Action = $request.query.Action
+
+    $null = Connect-AzAccount -Identity
+    $null = Set-AzContext $Context
 
     $vmStatus = Get-AzVM -ResourceGroupName $ResourceGroupName -Name $VMName -Status
     Write-output $vmStatus

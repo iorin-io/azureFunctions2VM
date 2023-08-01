@@ -6,7 +6,7 @@
           "methods": [ "GET" ,"POST"],
           "route": "/{Action}"
       },
-      "backendUri": "https://{関数アプリ名}.azurewebsites.net/api/{function名}",
+      "backendUri": "https://azurefunctions2vm.azurewebsites.net/api/HttpTrigger?",
       "requestOverrides": {
         "backend.request.method":"POST",
         "backend.request.querystring.Action": "{Action}"
